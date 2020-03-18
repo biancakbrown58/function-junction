@@ -3,35 +3,64 @@
  * and returns the largest of them. Use the if-then-else
  * construct available in Javascript.
  */
-
+const max = (a, b) => {
+  if (a > b) {
+    return a
+  } else {
+    return b
+  }
+}
 // ...
 
 /**
  * 2) Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
-
+const maxOfThree = (a, b, c) => {
+  if (a > b && a > c) {
+    return a
+  } else if (b > a && b > c) {
+    return b
+  } else {
+    return c
+  }
+}
 // ...
 
 /*
  * 3) Define a function sum() that takes two numbers as
  * arguments and computes the sum of those two numbers.
  */
-
+const sum = (a, b) => {
+  return a + b
+}
 // ...
 
 /*
  * 4) Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
  */
-
+const sumOfArray = arr => arr.reduce((a, b) => a + b, 0)
 // ...
 
 /**
  * 5) Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
-
+const isVowel = a => {
+  if (
+    a === 'a' ||
+    a === 'e' ||
+    a === 'i' ||
+    a === 'o' ||
+    a === 'u' ||
+    a === 'E'
+  ) {
+    return true
+  } else {
+    return false
+  }
+}
 // ...
 
 /**
@@ -42,7 +71,13 @@
  * For example, rovarspraket("this is fun") should
  * return the string "tothohisos isos fofunon".
  */
-
+const rovarspraket = str => {
+  const arr = str.split('')
+  const r = []
+  arr.forEach(char => {if ( char !== 'a')
+}
+)
+}
 // ...
 
 /**
@@ -51,7 +86,9 @@
  * reverse("skoob") should return the
  * string "books".
  */
+const reverse(str) {
 
+}
 // ...
 
 /**
